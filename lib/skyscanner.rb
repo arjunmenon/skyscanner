@@ -48,7 +48,7 @@ module Skyscanner
       def version; @@version ||= "v1.0"; end
       def version=(input); @@version = input; end
 
-      def apikey; @@api_key end
+      def apikey; @@api_key||= [] end
       def apikey=(input); @@api_key = input; end
     end
 
